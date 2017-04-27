@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="tests" verbose="3">
+ <listeners>
+   <listener class-name="listeners.ScreenshotOnFailure" />
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <parameter name="grid" value="no"/>
+  <test name="Test">
+  <parameter name="username" value="sunaina@test.com"/>
+  <parameter name="password" value="12345678"/>
+  <parameter name="browser" value="ff"/>
+    <classes>
+      <class name="test.LoginPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+  <parameter name="username" value="sunaina@test.com"/>
+  <parameter name="password" value="12345678"/>
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.GoogleLaunch"/>
+    </classes>
+  </test> Test
+</suite> <!-- Suite -->

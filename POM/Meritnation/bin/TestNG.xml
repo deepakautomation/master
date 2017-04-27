@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false" verbose="3">
+  <test name="Test">
+  <listeners>
+   <listener class-name="listeners.ScreenshotOnFailure" />
+      <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <parameter name="username" value="sunaina@test.com"/>
+  <parameter name="password" value="12345678"/>
+  <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test.LoginPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

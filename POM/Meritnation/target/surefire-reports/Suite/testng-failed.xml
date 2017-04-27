@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="password" value="12345678"/>
+  <parameter name="grid" value="no"/>
+  <parameter name="browser" value="ff"/>
+  <parameter name="username" value="sunaina@test.com"/>
+  <listeners>
+    <listener class-name="listeners.ScreenshotOnFailure"/>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+  </listeners>
+  <test name="Test">
+    <parameter name="password" value="12345678"/>
+    <parameter name="browser" value="ff"/>
+    <parameter name="username" value="sunaina@test.com"/>
+    <classes>
+      <class name="test.LoginPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test2">
+    <parameter name="password" value="12345678"/>
+    <parameter name="browser" value="ff"/>
+    <parameter name="username" value="sunaina@test.com"/>
+    <classes>
+      <class name="test.GoogleLaunch"/>
+    </classes>
+  </test> <!-- Test2 -->
+  <test name="Test(failed)" parallel="tests">
+    <parameter name="password" value="12345678"/>
+    <parameter name="browser" value="ff"/>
+    <parameter name="username" value="sunaina@test.com"/>
+    <classes>
+      <class name="test.GoogleLaunch">
+        <methods>
+          <include name="init"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+        </methods>
+      </class> <!-- test.GoogleLaunch -->
+      <class name="test.LoginPageTest">
+        <methods>
+          <include name="openURL"/>
+          <include name="closeBrowser"/>
+          <include name="openBrowser"/>
+          <include name="verifyUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- test.LoginPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
