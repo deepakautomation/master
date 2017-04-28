@@ -1,0 +1,446 @@
+2016-12-02 17:38:29:334 - warn: Appium support for versions of node < 0.12 has been deprecated and will be removed in a future version. Please upgrade!
+2016-12-02 17:38:29:433 - info: Welcome to Appium v1.4.13 (REV c75d8adcb66a75818a542fe1891a34260c21f76a)
+2016-12-02 17:38:29:433 - info: Appium REST http interface listener started on 0.0.0.0:4723
+2016-12-02 17:38:29:437 - info: [debug] Non-default server args: {"log":"F:\\seleniumworkspaces\\AppiumCare\\PageObjectModel\\src\\test\\resources\\logs\\Appium.log"}
+2016-12-02 17:38:29:438 - info: Console LogLevel: debug
+2016-12-02 17:38:29:438 - info: File LogLevel: debug
+2016-12-02 17:38:29:841 - info: --> GET /wd/hub/status {}
+2016-12-02 17:38:29:846 - info: [debug] Responding to client with success: {"status":0,"value":{"build":{"version":"1.4.13","revision":"c75d8adcb66a75818a542fe1891a34260c21f76a"}}}
+2016-12-02 17:38:29:854 - info: <-- GET /wd/hub/status 200 12.829 ms - 105 {"status":0,"value":{"build":{"version":"1.4.13","revision":"c75d8adcb66a75818a542fe1891a34260c21f76a"}}}
+2016-12-02 17:38:30:710 - info: --> POST /wd/hub/session {"desiredCapabilities":{"appPackage":"com.care.android.careview","appActivity":"com.care.android.careview.ui.startup.SplashActivity","platformVersion":"6.0.1","browserName":"null","platformName":"Android","deviceName":"android"}}
+2016-12-02 17:38:30:711 - info: Client User-Agent string: Apache-HttpClient/4.5.2 (Java/1.8.0_77)
+2016-12-02 17:38:30:714 - info: [debug] Didn't get app but did get Android package, will attempt to launch it on the device
+2016-12-02 17:38:30:715 - info: [debug] Creating new appium session 9432a524-8541-42df-b336-6736ea15c394
+2016-12-02 17:38:30:715 - info: Starting android appium
+2016-12-02 17:38:30:717 - info: [debug] Getting Java version
+2016-12-02 17:38:30:858 - info: Java version is: 1.8.0_77
+2016-12-02 17:38:30:859 - info: [debug] Checking whether adb is present
+2016-12-02 17:38:30:863 - info: [debug] Using adb from C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe
+2016-12-02 17:38:30:864 - warn: No app capability, can't parse package/activity
+2016-12-02 17:38:30:865 - info: [debug] Using fast reset? true
+2016-12-02 17:38:30:865 - info: [debug] Preparing device for session
+2016-12-02 17:38:30:865 - info: [debug] Not checking whether app is present since we are assuming it's already on the device
+2016-12-02 17:38:30:866 - info: Retrieving device
+2016-12-02 17:38:30:867 - info: [debug] Trying to find a connected android device
+2016-12-02 17:38:30:867 - info: [debug] Getting connected devices...
+2016-12-02 17:38:30:870 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe devices
+2016-12-02 17:38:30:936 - info: [debug] 1 device(s) connected
+2016-12-02 17:38:30:936 - info: Found device ce031603cda10b3403
+2016-12-02 17:38:30:936 - info: [debug] Setting device id to ce031603cda10b3403
+2016-12-02 17:38:30:936 - info: [debug] Waiting for device to be ready and to respond to shell commands (timeout = 5)
+2016-12-02 17:38:30:937 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 wait-for-device
+2016-12-02 17:38:30:988 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "echo 'ready'"
+2016-12-02 17:38:31:084 - info: [debug] Starting logcat capture
+2016-12-02 17:38:31:160 - info: [debug] Getting device API level
+2016-12-02 17:38:31:160 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "getprop ro.build.version.sdk"
+2016-12-02 17:38:31:269 - info: [debug] Device is at API Level 23
+2016-12-02 17:38:31:269 - info: Device API level is: 23
+2016-12-02 17:38:31:270 - info: [debug] Extracting strings for language: default
+2016-12-02 17:38:31:270 - info: [debug] Apk doesn't exist locally
+2016-12-02 17:38:31:271 - info: [debug] Could not get strings, but it looks like we had an old strings file anyway, so ignoring
+2016-12-02 17:38:31:271 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "rm -rf /data/local/tmp/strings.json"
+2016-12-02 17:38:31:361 - info: [debug] Not uninstalling app since server not started with --full-reset
+2016-12-02 17:38:31:361 - info: [debug] Skipping install since we launched with a package instead of an app path
+2016-12-02 17:38:31:361 - info: [debug] Forwarding system:4724 to device:4724
+2016-12-02 17:38:31:361 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 forward tcp:4724 tcp:4724
+2016-12-02 17:38:31:492 - info: [debug] Pushing appium bootstrap to device...
+2016-12-02 17:38:31:540 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 push "C:\\Program Files (x86)\\Appium\\node_modules\\appium\\build\\android_bootstrap\\AppiumBootstrap.jar" /data/local/tmp/
+2016-12-02 17:38:31:728 - info: [debug] Pushing settings apk to device...
+2016-12-02 17:38:31:766 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 install "C:\Program Files (x86)\Appium\node_modules\appium\build\settings_apk\settings_apk-debug.apk"
+2016-12-02 17:38:33:548 - info: [debug] Pushing unlock helper app to device...
+2016-12-02 17:38:33:550 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 install "C:\Program Files (x86)\Appium\node_modules\appium\build\unlock_apk\unlock_apk-debug.apk"
+2016-12-02 17:38:35:197 - info: Starting App
+2016-12-02 17:38:35:197 - info: [debug] Attempting to kill all 'uiautomator' processes
+2016-12-02 17:38:35:198 - info: [debug] Getting all processes with 'uiautomator'
+2016-12-02 17:38:35:198 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "ps 'uiautomator'"
+2016-12-02 17:38:35:379 - info: [debug] No matching processes found
+2016-12-02 17:38:35:380 - info: [debug] Running bootstrap
+2016-12-02 17:38:35:380 - info: [debug] spawning: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell uiautomator runtest AppiumBootstrap.jar -c io.appium.android.bootstrap.Bootstrap -e pkg com.care.android.careview -e disableAndroidWatchers false
+2016-12-02 17:38:35:975 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2016-12-02 17:38:35:975 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2016-12-02 17:38:35:975 - info: [debug] [UIAUTOMATOR STDOUT] io.appium.android.bootstrap.Bootstrap:
+2016-12-02 17:38:35:975 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2016-12-02 17:38:35:975 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2016-12-02 17:38:35:975 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2016-12-02 17:38:35:975 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2016-12-02 17:38:35:976 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 1
+2016-12-02 17:38:36:006 - info: [debug] [BOOTSTRAP] [debug] Socket opened on port 4724
+2016-12-02 17:38:36:007 - info: [debug] [BOOTSTRAP] [debug] Appium Socket Server Ready
+2016-12-02 17:38:36:008 - info: [debug] Waking up device if it's not alive
+2016-12-02 17:38:36:008 - info: [debug] Pushing command to appium work queue: ["wake",{}]
+2016-12-02 17:38:36:009 - info: [debug] [BOOTSTRAP] [debug] Loading json...
+2016-12-02 17:38:36:009 - info: [debug] [BOOTSTRAP] [debug] Registered crash watchers.
+2016-12-02 17:38:36:013 - info: [debug] [BOOTSTRAP] [debug] Client connected
+2016-12-02 17:38:36:014 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"wake","params":{}}
+2016-12-02 17:38:36:017 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:36:017 - info: [debug] [BOOTSTRAP] [debug] Got command action: wake
+2016-12-02 17:38:36:020 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2016-12-02 17:38:36:021 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "dumpsys window"
+2016-12-02 17:38:36:206 - info: [debug] Screen already unlocked, continuing.
+2016-12-02 17:38:36:206 - info: [debug] Pushing command to appium work queue: ["getDataDir",{}]
+2016-12-02 17:38:36:211 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"getDataDir","params":{}}
+2016-12-02 17:38:36:212 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:36:212 - info: [debug] [BOOTSTRAP] [debug] Got command action: getDataDir
+2016-12-02 17:38:36:212 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"\/data\/local\/tmp"}
+2016-12-02 17:38:36:212 - info: [debug] dataDir set to: /data/local/tmp
+2016-12-02 17:38:36:212 - info: [debug] Pushing command to appium work queue: ["compressedLayoutHierarchy",{"compressLayout":false}]
+2016-12-02 17:38:36:216 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"compressedLayoutHierarchy","params":{"compressLayout":false}}
+2016-12-02 17:38:36:217 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:36:218 - info: [debug] [BOOTSTRAP] [debug] Got command action: compressedLayoutHierarchy
+2016-12-02 17:38:36:231 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":false}
+2016-12-02 17:38:36:232 - info: [debug] Getting device API level
+2016-12-02 17:38:36:232 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "getprop ro.build.version.sdk"
+2016-12-02 17:38:36:347 - info: [debug] Device is at API Level 23
+2016-12-02 17:38:36:348 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "am start -S -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000 -n com.care.android.careview/com.care.android.careview.ui.startup.SplashActivity"
+2016-12-02 17:38:37:438 - info: [debug] Waiting for pkg "com.care.android.careview" and activity "com.care.android.careview.ui.startup.SplashActivity" to be focused
+2016-12-02 17:38:37:438 - info: [debug] Getting focused package and activity
+2016-12-02 17:38:37:438 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "dumpsys window windows"
+2016-12-02 17:38:37:581 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "getprop ro.build.version.release"
+2016-12-02 17:38:37:674 - info: [debug] Device is at release version 6.0.1
+2016-12-02 17:38:37:674 - info: [debug] Device launched! Ready for commands
+2016-12-02 17:38:37:674 - info: [debug] Setting command timeout to the default of 60 secs
+2016-12-02 17:38:37:675 - info: [debug] Appium session started with sessionId 9432a524-8541-42df-b336-6736ea15c394
+2016-12-02 17:38:37:677 - info: <-- POST /wd/hub/session 303 6966.742 ms - 74 
+2016-12-02 17:38:37:697 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394 {}
+2016-12-02 17:38:37:698 - info: [debug] Responding to client with success: {"status":0,"value":{"platform":"LINUX","browserName":"null","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.care.android.careview","appActivity":"com.care.android.careview.ui.startup.SplashActivity","platformVersion":"6.0.1","browserName":"null","platformName":"Android","deviceName":"android"},"appPackage":"com.care.android.careview","appActivity":"com.care.android.careview.ui.startup.SplashActivity","platformName":"Android","deviceName":"ce031603cda10b3403"},"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:37:699 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394 200 1.540 ms - 698 {"status":0,"value":{"platform":"LINUX","browserName":"null","platformVersion":"6.0.1","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"appPackage":"com.care.android.careview","appActivity":"com.care.android.careview.ui.startup.SplashActivity","platformVersion":"6.0.1","browserName":"null","platformName":"Android","deviceName":"android"},"appPackage":"com.care.android.careview","appActivity":"com.care.android.careview.ui.startup.SplashActivity","platformName":"Android","deviceName":"ce031603cda10b3403"},"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:37:981 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":0}
+2016-12-02 17:38:37:983 - info: [debug] Set Android implicit wait to 0ms
+2016-12-02 17:38:37:984 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:37:984 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 2.829 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:37:992 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context {}
+2016-12-02 17:38:37:992 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:37:993 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context 200 1.169 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:37:998 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements {"using":"id","value":"com.care.android.careview:id/linearLayout"}
+2016-12-02 17:38:37:999 - info: [debug] Waiting up to 0ms for condition
+2016-12-02 17:38:37:999 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/linearLayout","context":"","multiple":true}]
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/linearLayout","context":"","multiple":true}}
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/linearLayout using ID with the contextId:  multiple: true
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2016-12-02 17:38:38:008 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:474 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:39:476 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/linearLayout using ID with the contextId:  multiple: true
+2016-12-02 17:38:39:478 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:480 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:480 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2016-12-02 17:38:39:481 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:521 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2016-12-02 17:38:39:523 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:542 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"1"}]}
+2016-12-02 17:38:39:543 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"1"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:543 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements 200 1545.418 ms - 89 {"status":0,"value":[{"ELEMENT":"1"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:552 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/1/elements {"id":"1","using":"class name","value":"android.widget.TextView"}
+2016-12-02 17:38:39:552 - info: [debug] Waiting up to 0ms for condition
+2016-12-02 17:38:39:552 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"class name","selector":"android.widget.TextView","context":"1","multiple":true}]
+2016-12-02 17:38:39:555 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.TextView","context":"1","multiple":true}}
+2016-12-02 17:38:39:556 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:39:556 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:39:556 - info: [debug] [BOOTSTRAP] [debug] Finding android.widget.TextView using CLASS_NAME with the contextId: 1 multiple: true
+2016-12-02 17:38:39:556 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.TextView]
+2016-12-02 17:38:39:557 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[CLASS=android.widget.TextView]
+2016-12-02 17:38:39:558 - info: [debug] [BOOTSTRAP] [debug] Element[1] is 1, counter: 0
+2016-12-02 17:38:39:593 - info: [debug] [BOOTSTRAP] [debug] Element[1] is 1, counter: 1
+2016-12-02 17:38:39:611 - info: [debug] [BOOTSTRAP] [debug] Element[1] is 1, counter: 2
+2016-12-02 17:38:39:667 - info: [debug] [BOOTSTRAP] [debug] Element[1] is 1, counter: 3
+2016-12-02 17:38:39:686 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"2"},{"ELEMENT":"3"},{"ELEMENT":"4"}]}
+2016-12-02 17:38:39:686 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"2"},{"ELEMENT":"3"},{"ELEMENT":"4"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:687 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/1/elements 200 134.463 ms - 121 {"status":0,"value":[{"ELEMENT":"2"},{"ELEMENT":"3"},{"ELEMENT":"4"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:693 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":5000}
+2016-12-02 17:38:39:693 - info: [debug] Set Android implicit wait to 5000ms
+2016-12-02 17:38:39:693 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:694 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 0.828 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:703 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":0}
+2016-12-02 17:38:39:704 - info: [debug] Set Android implicit wait to 0ms
+2016-12-02 17:38:39:704 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:705 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 1.669 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:713 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context {}
+2016-12-02 17:38:39:713 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:714 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context 200 1.418 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:722 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements {"using":"id","value":"com.care.android.careview:id/linearLayout"}
+2016-12-02 17:38:39:723 - info: [debug] Waiting up to 0ms for condition
+2016-12-02 17:38:39:723 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/linearLayout","context":"","multiple":true}]
+2016-12-02 17:38:39:728 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/linearLayout","context":"","multiple":true}}
+2016-12-02 17:38:39:728 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:39:728 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:39:728 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/linearLayout using ID with the contextId:  multiple: true
+2016-12-02 17:38:39:728 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:728 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:729 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2016-12-02 17:38:39:729 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:809 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2016-12-02 17:38:39:810 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.care.android.careview:id/linearLayout]
+2016-12-02 17:38:39:831 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"5"}]}
+2016-12-02 17:38:39:832 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"5"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:833 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements 200 109.914 ms - 89 {"status":0,"value":[{"ELEMENT":"5"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:39:838 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/5/elements {"id":"5","using":"class name","value":"android.widget.TextView"}
+2016-12-02 17:38:39:838 - info: [debug] Waiting up to 0ms for condition
+2016-12-02 17:38:39:838 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"class name","selector":"android.widget.TextView","context":"5","multiple":true}]
+2016-12-02 17:38:39:842 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"class name","selector":"android.widget.TextView","context":"5","multiple":true}}
+2016-12-02 17:38:39:843 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:39:843 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:39:843 - info: [debug] [BOOTSTRAP] [debug] Finding android.widget.TextView using CLASS_NAME with the contextId: 5 multiple: true
+2016-12-02 17:38:39:843 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[CLASS=android.widget.TextView]
+2016-12-02 17:38:39:844 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[CLASS=android.widget.TextView]
+2016-12-02 17:38:39:844 - info: [debug] [BOOTSTRAP] [debug] Element[5] is 5, counter: 0
+2016-12-02 17:38:39:919 - info: [debug] [BOOTSTRAP] [debug] Element[5] is 5, counter: 1
+2016-12-02 17:38:39:928 - info: [debug] [BOOTSTRAP] [debug] Element[5] is 5, counter: 2
+2016-12-02 17:38:39:946 - info: [debug] [BOOTSTRAP] [debug] Element[5] is 5, counter: 3
+2016-12-02 17:38:40:023 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"6"},{"ELEMENT":"7"},{"ELEMENT":"8"}]}
+2016-12-02 17:38:40:025 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"6"},{"ELEMENT":"7"},{"ELEMENT":"8"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:40:026 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/5/elements 200 187.601 ms - 121 {"status":0,"value":[{"ELEMENT":"6"},{"ELEMENT":"7"},{"ELEMENT":"8"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:40:031 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":5000}
+2016-12-02 17:38:40:031 - info: [debug] Set Android implicit wait to 5000ms
+2016-12-02 17:38:40:036 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:40:036 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 5.376 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:40:053 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/screenshot {}
+2016-12-02 17:38:40:054 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "/system/bin/rm /data/local/tmp/screenshot.png; /system/bin/screencap -p /data/local/tmp/screenshot.png "
+2016-12-02 17:38:43:229 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 pull /data/local/tmp/screenshot.png "C:\\Users\\Selenium\\AppData\\Local\\Temp\\appium116112-10924-row6ad.png"
+2016-12-02 17:38:44:111 - info: [debug] Responding to client with success: {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3dlTW3eaP/639gUtSEKAxCKxCWNMDAhvOE6w07ZT3fGkplzdF6maqrmamuupmou57+r/YOYPmKnKRSepdMc93WPHTnDsxsYYExvHCzZYbBIgtIA2tJ7fBb+jL0JHuwQSfl5VroSDdPTRQTrSeZ/nPB/ev//7vzMghBBCCCGEEEIIIYQQQsqMf9gDIIQQQgghhBBCCCGEEHI0UQBNCCGEEEIIIYQQQgghpCIogCaEEEIIIYQQQgghhBBSERRAE0IIIYQQQgghhBBCCKkICqAJIYQQQgghhBBCCCGEVAQF0IQQQgghhBBCCCGEEEIqggJoQgghhBBCCCGEEEIIIRVBATQhhBBCCCGEEEIIIYSQiqAAmhBCCCGEEEIIIYQQQkhFUABNCCGEEEIIIYQQQgghpCIogCaEEEIIIYQQQgghhBBSERRAE0IIIYQQQgghhBBCCKkICqAJIYQQQgghhBBCCCGEVAQF0IQQQgghhBBCCCGEEEIqggJoQgghhBBCCCGEEEIIIRVBATQhhBBCCCGEEEIIIYSQiqAAmhBCCCGEEEIIIYQQQkhFUABNCCGEEEIIIYQQQgghpCKEhz0AQgg5bDwe77CHkIJhmMMeAiGEEEIIIYQQQkhZUABNCHnvsIEzn88Hn8+vygA6Ho8ng2gKpAkhhBBCCCGEEFKrKIAmhLw3eDwe5HI5mpqaoNVqUVdXV9UBdCAQgNvtxtraGnZ2diiIJoQQQgghhBBCSM2hAJoQ8l4QCoVoaGiAyWRCU1MT1Go1JBIJ+PzqbIWfSCSws7ODra0t6HQ6LC0tweVyIR6PH/bQCCGEEEKOLIPBAKVSCaVSCZ1OB7FYnHabSCQCl8sFn88Hn88Hh8NxCCM9GnQ6HVwu12EPgxBCSIVRAE0IOfJ4PB50Oh16e3vR0dHBeSBR...","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:273 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/screenshot 200 4220.465 ms - 3855770 {"status":0,"value":"iVBORw0KGgoAAAANSUhEUgAABaAAAAoACAYAAABH9IXPAAAABHNCSVQICAgIfAhkiAAAIABJREFUeJzs3dlTW3eaP/639gUtSEKAxCKxCWNMDAhvOE6w07ZT3fGkplzdF6maqrmamuupmou57+r/YOYPmKnKRSepdMc93WPHTnDsxsYYExvHCzZYbBIgtIA2tJ7fBb+jL0JHuwQSfl5VroSDdPTRQTrSeZ/nPB/ev//7vzMghBBCCCGEEEIIIYQQQsqMf9gDIIQQQgghhBBCCCGEEHI0UQBNCCGEEEIIIYQQQgghpCIogCaEEEIIIYQQQgghhBBSERRAE0IIIYQQQgghhBBCCKkICqAJIYQQQgghhBBCCCGEVAQF0IQQQgghhBBCCCGEEEIqggJoQgghhBBCCCGEEEIIIRVBATQhhBBCCCGEEEIIIYSQiqAAmhBCCCGEEEIIIYQQQkhFUABNCCGEEEIIIYQQQgghpCIogCaEEEIIIYQQQgghhBBSERRAE0IIIYQQQgghhBBCCKkICqAJIYQQQgghhBBCCCGEVAQF0IQQQgghhBBCCCGEEEIqggJoQgghhBBCCCGEEEIIIRVBATQhhBBCCCGEEEIIIYSQiqAAmhBCCCGEEEIIIYQQQkhFUABNCCGEEEIIIYQQQgghpCKEhz0AQgg5bDwe77CHkIJhmMMeAiGEEEIIIYQQQkhZUABNCHnvsIEzn88Hn8+vygA6Ho8ng2gKpAkhhBBCCCGEEFKrKIAmhLw3eDwe5HI5mpqaoNVqUVdXV9UBdCAQgNvtxtraGnZ2diiIJoQQQgghhBBCSM2hAJoQ8l4QCoVoaGiAyWRCU1MT1Go1JBIJ+PzqbIWfSCSws7ODra0t6HQ6LC0tweVyIR6PH/bQCCGEEEKOLIPBAKVSCaVSCZ1OB7FYnHabSCQCl8sFn88Hn88Hh8NxCCM9GnQ6HVwu12EPgxBCSIVRAE0IOfJ4PB50Oh16e3vR0dHBeSBR...","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:696 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":0}
+2016-12-02 17:38:44:696 - info: [debug] Set Android implicit wait to 0ms
+2016-12-02 17:38:44:696 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:697 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 1.506 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:702 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context {}
+2016-12-02 17:38:44:703 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:703 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context 200 1.084 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:708 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements {"using":"id","value":"com.care.android.careview:id/sign_up_email"}
+2016-12-02 17:38:44:708 - info: [debug] Waiting up to 0ms for condition
+2016-12-02 17:38:44:708 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/sign_up_email","context":"","multiple":true}]
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/sign_up_email","context":"","multiple":true}}
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/sign_up_email using ID with the contextId:  multiple: true
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.care.android.careview:id/sign_up_email]
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.care.android.careview:id/sign_up_email]
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2016-12-02 17:38:44:713 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/sign_up_email]
+2016-12-02 17:38:44:731 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2016-12-02 17:38:44:732 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.care.android.careview:id/sign_up_email]
+2016-12-02 17:38:44:743 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"9"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:744 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements 200 35.845 ms - 89 {"status":0,"value":[{"ELEMENT":"9"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:744 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"9"}]}
+2016-12-02 17:38:44:752 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":5000}
+2016-12-02 17:38:44:753 - info: [debug] Set Android implicit wait to 5000ms
+2016-12-02 17:38:44:753 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:753 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 1.350 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:44:759 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/9/click {"id":"9"}
+2016-12-02 17:38:44:760 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"9"}]
+2016-12-02 17:38:44:762 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"9"}}
+2016-12-02 17:38:44:763 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:44:763 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2016-12-02 17:38:45:602 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2016-12-02 17:38:45:602 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:603 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/9/click 200 843.894 ms - 76 {"status":0,"value":true,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:609 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":0}
+2016-12-02 17:38:45:610 - info: [debug] Set Android implicit wait to 0ms
+2016-12-02 17:38:45:610 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:610 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 0.714 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:616 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context {}
+2016-12-02 17:38:45:616 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:617 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context 200 0.823 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:623 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements {"using":"id","value":"com.care.android.careview:id/seeker_enrollment_layout"}
+2016-12-02 17:38:45:623 - info: [debug] Waiting up to 0ms for condition
+2016-12-02 17:38:45:623 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/seeker_enrollment_layout","context":"","multiple":true}]
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/seeker_enrollment_layout","context":"","multiple":true}}
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/seeker_enrollment_layout using ID with the contextId:  multiple: true
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.care.android.careview:id/seeker_enrollment_layout]
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.care.android.careview:id/seeker_enrollment_layout]
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2016-12-02 17:38:45:627 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/seeker_enrollment_layout]
+2016-12-02 17:38:45:816 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2016-12-02 17:38:45:816 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.care.android.careview:id/seeker_enrollment_layout]
+2016-12-02 17:38:45:823 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"10"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:823 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements 200 200.983 ms - 90 {"status":0,"value":[{"ELEMENT":"10"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:824 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"10"}]}
+2016-12-02 17:38:45:829 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":20000}
+2016-12-02 17:38:45:830 - info: [debug] Set Android implicit wait to 20000ms
+2016-12-02 17:38:45:830 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:830 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 1.047 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:45:835 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/10/click {"id":"10"}
+2016-12-02 17:38:45:836 - info: [debug] Pushing command to appium work queue: ["element:click",{"elementId":"10"}]
+2016-12-02 17:38:45:837 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"10"}}
+2016-12-02 17:38:45:838 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:45:838 - info: [debug] [BOOTSTRAP] [debug] Got command action: click
+2016-12-02 17:38:46:172 - info: [debug] Responding to client with success: {"status":0,"value":true,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:46:173 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/10/click 200 337.629 ms - 76 {"status":0,"value":true,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:46:173 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":true}
+2016-12-02 17:38:46:181 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element {"using":"id","value":"com.care.android.careview:id/providerServicesHeaderText"}
+2016-12-02 17:38:46:181 - info: [debug] Waiting up to 20000ms for condition
+2016-12-02 17:38:46:182 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:46:184 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:46:184 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:46:184 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:46:184 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:46:184 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:46:688 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:46:688 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:46:688 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:46:721 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:46:722 - info: [debug] Waited for 540ms so far
+2016-12-02 17:38:47:226 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:47:230 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:47:230 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:47:230 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:47:230 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:47:230 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:47:269 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:47:269 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:47:269 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:47:432 - info: [debug] Waited for 1250ms so far
+2016-12-02 17:38:47:432 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:47:936 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:47:941 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:47:941 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:47:941 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:47:941 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:47:942 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:47:976 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:47:976 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:47:976 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:47:993 - info: [debug] Waited for 1811ms so far
+2016-12-02 17:38:47:993 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:48:494 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:48:498 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:48:498 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:48:498 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:48:498 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:48:498 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:48:523 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:48:523 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:48:523 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:48:703 - info: [debug] Waited for 2521ms so far
+2016-12-02 17:38:48:703 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:49:204 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:49:208 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:49:209 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:49:209 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:49:209 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:49:209 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:49:234 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:49:235 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:49:235 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:49:268 - info: [debug] Waited for 3086ms so far
+2016-12-02 17:38:49:269 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:49:769 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:49:773 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:49:774 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:49:774 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:49:774 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:49:774 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:49:802 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:49:803 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:49:803 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:49:833 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:49:833 - info: [debug] Waited for 3651ms so far
+2016-12-02 17:38:50:341 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:50:344 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:50:345 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:50:345 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:50:345 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:50:345 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:50:375 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:50:375 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:50:375 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:50:437 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:50:438 - info: [debug] Waited for 4256ms so far
+2016-12-02 17:38:50:945 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:50:950 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:50:950 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:50:950 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:50:950 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:50:950 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:50:997 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:50:997 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:50:998 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:51:189 - info: [debug] Waited for 5006ms so far
+2016-12-02 17:38:51:189 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:51:690 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:51:693 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:51:693 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:51:694 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:51:694 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:51:694 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:51:723 - info: [debug] [BOOTSTRAP] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+2016-12-02 17:38:51:723 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:51:723 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:51:756 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":7,"value":"No element found"}
+2016-12-02 17:38:51:757 - info: [debug] Waited for 5575ms so far
+2016-12-02 17:38:52:265 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}]
+2016-12-02 17:38:52:270 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":false}}
+2016-12-02 17:38:52:270 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:52:270 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:52:271 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: false
+2016-12-02 17:38:52:271 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:52:661 - info: [debug] Responding to client with success: {"status":0,"value":{"ELEMENT":"11"},"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:661 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element 200 6480.008 ms - 88 {"status":0,"value":{"ELEMENT":"11"},"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:662 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":{"ELEMENT":"11"}}
+2016-12-02 17:38:52:666 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":0}
+2016-12-02 17:38:52:666 - info: [debug] Set Android implicit wait to 0ms
+2016-12-02 17:38:52:667 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:669 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 2.540 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:673 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context {}
+2016-12-02 17:38:52:673 - info: [debug] Responding to client with success: {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:674 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/context 200 0.969 ms - 84 {"status":0,"value":"NATIVE_APP","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:678 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements {"using":"id","value":"com.care.android.careview:id/providerServicesHeaderText"}
+2016-12-02 17:38:52:678 - info: [debug] Waiting up to 0ms for condition
+2016-12-02 17:38:52:678 - info: [debug] Pushing command to appium work queue: ["find",{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":true}]
+2016-12-02 17:38:52:682 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"com.care.android.careview:id/providerServicesHeaderText","context":"","multiple":true}}
+2016-12-02 17:38:52:684 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:52:684 - info: [debug] [BOOTSTRAP] [debug] Got command action: find
+2016-12-02 17:38:52:684 - info: [debug] [BOOTSTRAP] [debug] Finding com.care.android.careview:id/providerServicesHeaderText using ID with the contextId:  multiple: true
+2016-12-02 17:38:52:684 - info: [debug] [BOOTSTRAP] [debug] Using: UiSelector[RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:52:684 - info: [debug] [BOOTSTRAP] [debug] getElements selector:UiSelector[RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:52:684 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (0)
+2016-12-02 17:38:52:685 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:52:706 - info: [debug] [BOOTSTRAP] [debug] Element[] is null: (1)
+2016-12-02 17:38:52:706 - info: [debug] [BOOTSTRAP] [debug] getElements tmp selector:UiSelector[INSTANCE=1, RESOURCE_ID=com.care.android.careview:id/providerServicesHeaderText]
+2016-12-02 17:38:52:732 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":[{"ELEMENT":"12"}]}
+2016-12-02 17:38:52:732 - info: [debug] Responding to client with success: {"status":0,"value":[{"ELEMENT":"12"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:733 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/elements 200 55.042 ms - 90 {"status":0,"value":[{"ELEMENT":"12"}],"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:738 - info: --> POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts {"type":"implicit","ms":5000}
+2016-12-02 17:38:52:738 - info: [debug] Set Android implicit wait to 5000ms
+2016-12-02 17:38:52:738 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:739 - info: <-- POST /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/timeouts 200 0.817 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:743 - info: --> GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/12/text {}
+2016-12-02 17:38:52:744 - info: [debug] Pushing command to appium work queue: ["element:getText",{"elementId":"12"}]
+2016-12-02 17:38:52:747 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"action","action":"element:getText","params":{"elementId":"12"}}
+2016-12-02 17:38:52:747 - info: [debug] [BOOTSTRAP] [debug] Got command of type ACTION
+2016-12-02 17:38:52:747 - info: [debug] [BOOTSTRAP] [debug] Got command action: getText
+2016-12-02 17:38:52:762 - info: [debug] Responding to client with success: {"status":0,"value":"I AM LOOKING FOR...","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:763 - info: <-- GET /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394/element/12/text 200 19.214 ms - 93 {"status":0,"value":"I AM LOOKING FOR...","sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:52:763 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"I AM LOOKING FOR..."}
+2016-12-02 17:38:55:816 - info: --> DELETE /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394 {}
+2016-12-02 17:38:55:817 - info: Shutting down appium session
+2016-12-02 17:38:55:817 - info: [debug] Pressing the HOME button
+2016-12-02 17:38:55:818 - info: [debug] executing cmd: C:\Users\Selenium\AppData\Local\Android\sdk\platform-tools\adb.exe -s ce031603cda10b3403 shell "input keyevent 3"
+2016-12-02 17:38:56:653 - info: [debug] Stopping logcat capture
+2016-12-02 17:38:56:658 - info: [debug] Logcat terminated with code null, signal SIGTERM
+2016-12-02 17:38:56:662 - info: [debug] Sent shutdown command, waiting for UiAutomator to stop...
+2016-12-02 17:38:56:665 - info: [debug] [BOOTSTRAP] [debug] Got data from client: {"cmd":"shutdown"}
+2016-12-02 17:38:56:665 - info: [debug] [BOOTSTRAP] [debug] Got command of type SHUTDOWN
+2016-12-02 17:38:56:666 - info: [debug] [BOOTSTRAP] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+2016-12-02 17:38:56:666 - info: [debug] [BOOTSTRAP] [debug] Closed client connection
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: numtests=1
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=.
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: id=UiAutomatorTestRunner
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: test=testRunServer
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: class=io.appium.android.bootstrap.Bootstrap
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: current=1
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: 0
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS: stream=
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] Test results for WatcherResultPrinter=.
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] Time: 20.746
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] OK (1 test)
+2016-12-02 17:38:56:666 - info: [debug] [UIAUTOMATOR STDOUT] INSTRUMENTATION_STATUS_CODE: -1
+2016-12-02 17:38:56:748 - info: [debug] UiAutomator shut down normally
+2016-12-02 17:38:56:748 - info: [debug] Cleaning up android objects
+2016-12-02 17:38:56:748 - info: [debug] Cleaning up appium session
+2016-12-02 17:38:56:749 - info: [debug] Responding to client with success: {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
+2016-12-02 17:38:56:749 - info: <-- DELETE /wd/hub/session/9432a524-8541-42df-b336-6736ea15c394 200 932.678 ms - 76 {"status":0,"value":null,"sessionId":"9432a524-8541-42df-b336-6736ea15c394"}
